@@ -20,7 +20,7 @@ const SavdoBoshlash = () => {
         <div className={cls.savdo}>
             <div className="container" style={{padding: '0'}}>
                 <div className={cls.inner}>
-                    <Link to='/savdo/boshlash/arxiv' className={cls.inner__docs}>
+                    <Link className={cls.inner__docs} to='/savdo/boshlash/arxiv'>
                         <DocsIcon />
                     </Link>
                     <div>

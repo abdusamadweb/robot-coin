@@ -21,7 +21,7 @@ const Buyurtmalar = () => {
                                 Bekor qilingan buyurtmalar
                             </button>
                             <button className={cls.body__txt}
-                                  style={{color: activeList === 2 ? '#007074' : '', marginBottom: '0'}}
+                                  style={{color: activeList === 2 ? '#007074' : '#111', marginBottom: '0'}}
                                   onClick={() => setActiveList(2)}
                             >
                                 Tasdiqlangan buyurtmalar
