@@ -6,7 +6,6 @@ const Buyurtmalar = () => {
 
     const [activeList, setActiveList] = useState(1)
 
-    
     return (
         <div className={cls.buyurtma}>
             <div className='container' style={{padding: '0'}}>
@@ -16,7 +15,7 @@ const Buyurtmalar = () => {
                         <div className='row evenly align-center' style={{margin: '1rem 0 2rem 0', flexFlow: 'nowrap'}}>
                             <button
                                 className={cls.body__txt}
-                                style={{color: activeList === 1 ? '#007074' : ''}}
+                                style={{color: activeList === 1 ? '#007074' : '#111'}}
                                 onClick={() => setActiveList(1)}
                             >
                                 Bekor qilingan buyurtmalar

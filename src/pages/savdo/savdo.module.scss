@@ -93,6 +93,10 @@
       -moz-appearance:none; /* Firefox */
       -webkit-appearance:none; /* Safari and Chrome */
       appearance:none;
+
+      option {
+        color: #111;
+      }
     }
 
     &__link {
@@ -142,6 +146,7 @@
       font-size: 12px;
       padding: 8px 12px;
       border-radius: 5px;
+      color: #111;
       background-color: #fff;
       
       @include breakpoint-down(385px) {

@@ -11,11 +11,11 @@ const HisobChiqarish = () => {
                     <Head link={'/menu'} title={'HISOBNI CHIQARISH'} />
                     <div className={cls.body}>
                         <div className={cls.body__inner} style={{borderRadius: '20px'}}>
-                            <div>
+                            <div style={{marginBottom: '1rem'}}>
                                 <input className={cls.body__inp} type="text" placeholder='USDT ADRES NI KIRITING'/>
                                 <p className={cls.body__desc_red}>Adressni kiritishda etiborli bo’ling !</p>
                             </div>
-                            <div>
+                            <div style={{marginBottom: '2rem'}}>
                                 <input className={cls.body__inp} type="number" placeholder='SUMMANI USDT DA KIRITING'/>
                                 <p className={cls.body__desc} style={{textAlign: 'end'}}>Hisobingizda mavjud : {'100'} usdt</p>
                             </div>
