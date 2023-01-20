@@ -1,0 +1,31 @@
+@use './src/scss' as *;
+
+.header {
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: $main-color;
+  }
+
+  .link {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 14px;
+    padding: 6px 0;
+    color: #fff;
+
+    .active {
+      background: #018d94;
+    }
+
+    span {
+      margin-top: 4px;
+    }
+  }
+}

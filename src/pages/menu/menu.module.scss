@@ -1,0 +1,88 @@
+@use './src/scss' as *;
+
+.menu {
+  padding-bottom: 60px;
+  color: #fff;
+
+  .head {
+    padding: 40px 50px;
+    background: $main-color;
+
+    @include breakpoint-down(520px) {
+      padding: 40px 36px;
+    }
+
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+
+    &__txt {
+      display: block;
+    }
+
+    &__usd {
+      width: 100%;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 13px 1rem;
+      border-radius: 12px;
+      color: #111;
+      background: #fff;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 1rem;
+      margin: 0 5px;
+      border-radius: 12px;
+      color: #111;
+      background: #fff;
+
+      @include breakpoint-down(462px) {
+        width: 188px;
+        margin-bottom: 1rem;
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .body {
+    padding: 1rem;
+
+    &__wrapper {
+      padding: 20px 24px;
+      border-radius: 12px;
+      background: $main-color;
+    }
+
+    &__list {
+      display: flex;
+      flex-flow: column;
+      gap: 1.5rem;
+    }
+
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}

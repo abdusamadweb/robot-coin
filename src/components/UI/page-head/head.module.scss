@@ -1,0 +1,33 @@
+@use './src/scss' as *;
+
+.head {
+  position: relative;
+  padding: 1rem;
+  color: #fff;
+  background: $main-color;
+
+  &__link {
+    position: absolute;
+    top: 28%;
+    left: 3%;
+    color: #fff;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  &__plus {
+    position: absolute;
+    top: 22%;
+    right: 3%;
+    height: 30px;
+  }
+}

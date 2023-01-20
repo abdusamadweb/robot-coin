@@ -1,0 +1,16 @@
+export { default as TrashIcon } from "./trash-icon";
+export { default as BankIcon } from "./bank-icon";
+export { default as CopyIcon } from "./copy-icon";
+export { default as DocsIcon } from "./docs-icon";
+export { default as HomeIcon } from "./home-icon";
+export { default as LogoutIcon } from "./logout-icon";
+export { default as PlusIcon } from "./plus-icon";
+export { default as SettingsIcon } from "./settings-icon";
+export { default as TgIcon } from "./tg-icon";
+export { default as UserIcon } from "./user-icon";
+export { default as Users2Icon } from "./users2-icon";
+export { default as Wallet1Icon } from "./wallet1-icon";
+export { default as Wallet2Icon } from "./wallet2-icon";
+export { default as WalletPlusIcon } from "./walletplus-icon";
+export { default as HidePassword } from "./hide-password-icon";
+export { default as BigUserIcon } from './big-user-icon';

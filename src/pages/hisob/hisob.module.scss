@@ -1,0 +1,84 @@
+@use './src/scss' as *;
+
+.hisob {
+
+  .body {
+    padding: 2rem 1rem;
+
+    &__inner {
+      text-align: center;
+      padding: 50px 60px;
+      color: #fff;
+      background: $main-color;
+
+      @include breakpoint-down(450px) {
+        padding: 40px 30px;
+      }
+    }
+
+    &__inp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      border-color: transparent;
+      background: #fff;
+
+     &_txt{
+       font-weight: 500;
+        color: #11111177;
+      }
+
+      svg {
+        display: block;
+        margin-left: auto;
+      }
+    }
+
+    &__inps {
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 30%;
+        right: 4%;
+      }
+    }
+
+    &__desc {
+      font-weight: 300;
+      font-size: 13px;
+      text-align: start;
+      margin-bottom: 2rem;
+    }
+    &__desc_red {
+      font-weight: 300;
+      font-size: 13px;
+      text-align: start;
+      margin-bottom: 1.5rem;
+      color: $red-color;
+    }
+
+    &__btn {
+      font-weight: 400;
+      font-size: 13px;
+      padding: 1rem 2.5rem;
+      border-radius: 25px;
+      color: #111;
+      background: #fff;
+    }
+
+    &__btn_green {
+      font-weight: 600;
+      font-size: 14px;
+      padding: 1rem 2.5rem;
+      border-radius: 25px;
+      color: #fff;
+      background: $green-color;
+    }
+  }
+}
