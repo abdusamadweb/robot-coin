@@ -6,13 +6,14 @@ const Buyurtmalar = () => {
 
     const [activeList, setActiveList] = useState(1)
 
+    
     return (
         <div className={cls.buyurtma}>
             <div className='container' style={{padding: '0'}}>
-                <div className={cls.inner}>
+                <div>
                     <Head link={'/savdo/boshlash'} title={'Tasdiqlangan va bekor qilingan buyurtmalar'} />
                     <div className={cls.body}>
-                        <div className='row evenly' style={{margin: '1rem 0 2rem 0'}}>
+                        <div className='row evenly align-center' style={{margin: '1rem 0 2rem 0', flexFlow: 'nowrap'}}>
                             <button
                                 className={cls.body__txt}
                                 style={{color: activeList === 1 ? '#007074' : ''}}
@@ -27,9 +28,9 @@ const Buyurtmalar = () => {
                                 Tasdiqlangan buyurtmalar
                             </button>
                         </div>
-                        <ul className={cls.body__list}>
+                        <ul>
                             <li className={cls.item}>
-                                <span className={cls.item__title}>Buyurtma raqami : {'982398374928374289374289347'}</span>
+                                <span className={cls.item__title}>Buyurtma raqami : <span>{'982398374928374289374289347'}</span></span>
                                 <p style={{color: activeList === 1 ? '#FFC700' : '#24FF00'}}>
                                     {
                                         activeList === 1 ? 'Bekor qilingan va ko’rib chiqilayotgan buyurtama' : 'Buyurtma tasdiqlangan'

@@ -61,8 +61,8 @@ const SavdoBoshlash = () => {
                                 <span>{ 'To’lanmagan' }</span>
                             </div>
                             <div className="row between">
-                                <span>Buyurtma raqami :</span>
-                                <span>{ '893492736498723648392649283' }</span>
+                                <span>Buyurtma raqami : </span>
+                                <span className={cls.content__id}>{ '893492736498723648392649283' }</span>
                             </div>
                             <div className="row between">
                                 <span>Usdt miqdori :</span>
@@ -86,8 +86,7 @@ const SavdoBoshlash = () => {
                             </div>
                             <div style={{textAlign: 'end'}}>
                                 <button
-                                    className={cls.content__btn}
-                                    style={{background: '#FF0000', color: '#fff', marginRight: '1rem'}}
+                                    className={cls.content__btn_red}
                                     onClick={() => setCancel(true)}
                                 >
                                     Buyurtmani bekor qilish

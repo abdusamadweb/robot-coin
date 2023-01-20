@@ -2,10 +2,6 @@
 
 .buyurtma {
 
-  .inner {
-
-  }
-
   .body {
     padding: 1rem;
 
@@ -14,14 +10,6 @@
       font-size: 15px;
       margin: 0 8px;
       cursor: pointer;
-
-      @include breakpoint-down(500px) {
-        margin-bottom: 1rem;
-      }
-    }
-
-    &__list {
-
     }
 
     .item {
@@ -33,6 +21,14 @@
       & > * {
         font-size: 14px;
         margin-bottom: 1rem;
+      }
+
+      &__title {
+        span {
+          @include breakpoint-down(432px) {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }

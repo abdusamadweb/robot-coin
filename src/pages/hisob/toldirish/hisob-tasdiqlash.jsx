@@ -11,9 +11,9 @@ const HisobTasdiqlash = () => {
                 <Head link={'/hisob'} title={'HISOBNI TASDIQLASH'} />
                 <div className={cls.body}>
                     <div className={cls.body__inner}>
-                        <div>
-                            <div className={cls.body__inp}>
-                                <span className={cls.body__inp_txt}>{ 'IU7g6f98g97G86WFGX7YVY9X' }</span>
+                        <div style={{marginBottom: '1rem'}}>
+                            <div className={cls.body__inps}>
+                                <input className={cls.body__inp} style={{paddingRight: '2rem'}} type='text' placeholder='IU7g6f98g97G86WFGX7YVY9X'/>
                                 <CopyIcon />
                             </div>
                             <p className={cls.body__desc_red}>Tolov qilayotgan usdt adresga etiborli bo’ling faqatgina TRC20  setida yubiring boshqa setda yuborilgan to’lovlar qabul qilinmaydi bekor qilinadi !</p>

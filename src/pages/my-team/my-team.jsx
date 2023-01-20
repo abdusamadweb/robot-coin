@@ -11,7 +11,7 @@ const MyTeam = () => {
                     <Head link={'/menu'} title={'MENING JAMOAM'} />
                     <div className={cls.body}>
                         <div className={cls.inner}>
-                            <form className={cls.form}>
+                            <div className={cls.form}>
                                 <label className={cls.form__label}>
                                     <input className={cls.form__inp} type="text" placeholder='Referal ssilka'/>
                                     <button className={cls.form__icon}>
@@ -24,10 +24,9 @@ const MyTeam = () => {
                                         <CopyIcon />
                                     </button>
                                 </label>
-                                <button className={cls.form__btn}>Tasdiqlash</button>
-                                <p className={cls.form__desc}>Har bitta chaqirilgan do’stingiz hisobini to’ldirsa sizga 5% miqdorida bonus beriladi </p>
+                                <p className={cls.form__desc}>Har bitta chaqirilgan do’stingiz hisobini to’ldirsa sizga {'5'}% miqdorida bonus beriladi </p>
                                 <p className={cls.form__total}>Umumiy foyda : {'1000'} usdt</p>
-                            </form>
+                            </div>
                         </div>
                         <div className={cls.wrapper}>
                             <table className={cls.table}>

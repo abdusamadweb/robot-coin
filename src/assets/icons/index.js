@@ -14,3 +14,4 @@ export { default as Wallet2Icon } from "./wallet2-icon";
 export { default as WalletPlusIcon } from "./walletplus-icon";
 export { default as HidePassword } from "./hide-password-icon";
 export { default as BigUserIcon } from './big-user-icon';
+export { default as BonusIcon } from './bonus-icon';

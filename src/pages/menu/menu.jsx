@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cls from './menu.module.scss'
 import {
     BankIcon,
-    BigUserIcon, LogoutIcon,
+    BigUserIcon, BonusIcon, LogoutIcon,
     SettingsIcon,
     Users2Icon,
     Wallet1Icon,
@@ -18,6 +18,11 @@ const Menu = () => {
             title: 'Sozlamalar',
             href: '/sozlamalar',
             icon: <SettingsIcon />
+        },
+        {
+            title: 'Bonus kupon ',
+            href: undefined,
+            icon: <BonusIcon />
         },
         {
             title: 'Savdo qilish',
@@ -41,8 +46,24 @@ const Menu = () => {
         },
     ]
 
+    const [modal, setModal] = useState(false)
+
     return (
         <div className={cls.menu}>
+            {
+                modal &&
+                <div className={cls.modal}>
+                    <div className={cls.content}>
+                        <button className={cls.content__close} onClick={() => setModal(false)}>
+                            <i className="fa-solid fa-xmark"/>
+                        </button>
+                        <span className={cls.content__title}>KUPON KODINI KIRITING</span>
+                        <input className={cls.content__inp} type="text" placeholder='KUPON KODINI KIRITING'/>
+                        <button className={cls.content__btn}>QABUL QILISH</button>
+                    </div>
+                    <div className={cls.modal__bg} onClick={() => setModal(false)}/>
+                </div>
+            }
             <div className="container" style={{padding: '0'}}>
                 <div>
                     <div className={cls.head}>
@@ -71,7 +92,7 @@ const Menu = () => {
                                 {
                                     navList.map((item, i) => (
                                         <li key={i}>
-                                            <Link className={cls.body__link} to={item.href}>
+                                            <Link className={cls.body__link} onClick={(e) => e.target.innerText === 'Bonus kupon' && setModal(true)} to={item.href}>
                                                 <div className='row align-center'>
                                                     { item.icon }
                                                     <span>{ item.title }</span>

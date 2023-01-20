@@ -132,12 +132,39 @@
     span {
       font-size: 14px;
     }
+    &__id {
+      @include breakpoint-down(411.5px) {
+        margin-top: 10px;
+      }
+    }
 
     &__btn {
       font-size: 12px;
       padding: 8px 12px;
       border-radius: 5px;
       background-color: #fff;
+      
+      @include breakpoint-down(385px) {
+        display: block;
+        width: 155px;
+        margin-left: auto;
+      }
+    }
+    &__btn_red {
+      font-size: 12px;
+      padding: 8px 12px;
+      margin-right: 10px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: $red-color;
+
+      @include breakpoint-down(385px) {
+        display: block;
+        width: 155px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
   }
 
